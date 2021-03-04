@@ -1,0 +1,54 @@
+/*
+File: RegStyle.css
+?: Styling for Registration.html
+*/
+#currClassList {
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#submitClass {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+#selectClass {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    text-justify: center;
+}
+#selectClassSubmit {
+    margin-top: 15px;
+    margin-left: 50px;
+    padding: 10px;
+    align-self: center;
+    align-content: center;
+}
+#currClassList {
+    background-color: white;
+}
+
+#currClassList div:hover {
+    cursor: pointer;
+    color: darkred;
+}
+
+.regContent{
+    display: block;
+    margin: 20px;
+}
+
+#selectedQuarter {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    text-justify: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: larger;
+}
