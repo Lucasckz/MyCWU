@@ -1,0 +1,115 @@
+<!-- 
+File: Registration.html
+?: Registration Page
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="../../../main.css" rel="stylesheet" type="text/css" media="screen" >
+        <link href="RegStyle.css" rel="stylesheet" type="text/css" media="screen" >
+        <script src="RegistrationScript.js"></script>
+        <title>Register For Classes!</title>
+    </head>
+    <body class="wrapper">
+        <a href="../../../Index.html" class="header1"> My CWU </a>
+      
+
+        <div class="header2">
+            <div class="row">
+                <div class="tabs">
+                    Outlook
+                        <div class="tab-cont"> 
+                            <a href="https://outlook.office.com/mail/inbox"> Inbox </a>
+                            <a href="https://outlook.office.com/mail/sentitems"> Sent </a>
+                            <a href="https://outlook.office.com/mail/archive"> Archived </a>
+                        </div>
+                    </div>
+                <div class="tabs">
+                    Canvas
+                        <div class="tab-cont"> 
+                            <a href="https://canvas.cwu.edu/"> Dashboard </a>
+                            <a href="https://canvas.cwu.edu/"> Courses </a>
+                            <a href="https://canvas.cwu.edu/"> Groups </a>
+                            <a href="https://canvas.cwu.edu/calendar"> Calendar </a>
+                            <a href="https://canvas.cwu.edu/conversations#filter=type=inbox"> Inbox </a>
+                        </div>
+                    </div>
+                <div class="tabs">
+                    Housing
+                    <div class="tab-cont"> 
+                        <a href="https://uhnsp.aux.cwu.edu/THDSS/navigation/student/my-screen"> Home </a>
+                        <a href="https://uhnsp.aux.cwu.edu/THDSS/navigation/applications/questions/142"> Apartment Applications </a>
+                        <a href="https://uhnsp.aux.cwu.edu/THDSS/navigation/student/general"> Room Selection </a>
+                    </div>
+                </div>
+                <div class="tabs">
+                    Financial
+                    <div class="tab-cont"> 
+                        <a href="../../Financial/BankAccount/BankAccount.html"> Manage Bank Account </a>
+                        <a href="../../Financial/PayBills/PayBills.html"> Make Payments </a>
+                    </div>
+                    </div>
+                    <div class="tabs">
+                    Registration
+                    <div class="tab-cont"> 
+                        <a href="QuarterSelection.html"> Add/Drop Classes </a>
+                        <a href="../Enrolled/Enrolled.html"> View My Classes </a>
+                    </div>
+                </div>
+                <div class="tabs">
+                    Parking
+                    <div class="tab-cont"> 
+                        <a href="https://stuliv.aux.cwu.edu/myparking/CPOverview.cfm"> Home </a>
+                        <a href="https://stuliv.aux.cwu.edu/myparking/UpdateAddress.cfm"> Apply for Permit </a>
+                        <a href="https://stuliv.aux.cwu.edu/myparking/Tickets.cfm"> Tickets and Appeals </a>
+                    </div>
+                </div>
+                <div class="tabs">
+                    Library
+            <div class="tab-cont"> 
+              <a href="https://searchlib.cwu.edu/"> Home </a>
+              <a href="https://searchlib.cwu.edu/primo-explore/search?vid=CWU&mode=advanced"> Advanced Search </a>
+            </div>
+                </div>
+            </div>
+            <div class="logOut">Log Out</div>
+        </div>
+
+        <div class="page" id="registrationPage" onload="generateCurrClassList()"> 
+            <div class="regContent">
+
+                <div id="selectedQuarter"></div>
+                <!-- Selected Classes -->
+                
+                <ul id="currClassList">
+                </ul>
+            
+                <br>
+                <!-- Class List -->
+                <form id="submitClass">
+                    <select id="selectClass" name="availableClasses" multiple>
+                        <option value="Class 1">Class 1</option>
+                        <option value="Class 2">Class 2</option>
+                        <option value="Class 3">Class 3</option>
+                        <option value="Class 4">Class 4</option>
+                        <option value="Class 5">Class 5</option>
+                        <option value="Class 6">Class 6</option>
+                        <option value="Class 7">Class 7</option>
+                        <option value="Class 8">Class 8</option>
+                        <option value="Class 9">Class 9</option>
+                        <option value="Class 10">Class 10</option>
+                        <option value="Class 11">Class 11</option>
+                        <option value="Class 12">Class 12</option>
+                        <option value="Class 13">Class 13</option>
+                        <option value="Class 14">Class 14</option>
+                        <option value="Class 15">Class 15</option>
+                    </select>
+                </form>
+                <button id="selectClassSubmit" onclick="addClass()">Submit</button>
+                <button id="clearClassList" onclick="clearClasses()">Clear Class List</button>
+                <button id="submitClassesButton" onclick="submitClasses()">Finalize Classes</button>
+            </div>
+        </div>
+    </body>
+</html>
