@@ -4,20 +4,38 @@
     <head>
       <meta charset="UTF-8">
       <link href="main.css" rel="stylesheet" type="text/css" media="screen" >
-      <script src="logIn.js"></script>
+      <link href="loginStyle.css" rel="stylesheet" type="text/css" media="screen" >
+      <script>
+        const setInfo = () => {
+          const inputName = document.getElementById("userName").value;
+          const inputEmail = document.getElementById("email").value;
+
+          sessionStorage.setItem("username", inputName);
+          sessionStorage.setItem("email", inputEmail);
+          
+          window.location.href = "Index.html";
+
+          return false;	
+        }
+      </script>
       <title>Home</title>
     </head>
 
     <body class="wrapper" style="background-image: none;">
 
       <a href="logIn.html" class="header1"> My CWU </a>
-      <form class="logInForm">
-        <label for:"userName">Name:</label>
-        <input type="text" name="userName">
-        <label for:"Email">Email:</label>
-        <input type="text" name="Email">
-        <input type="submit" onclick="setStuff()">
-      </form>
+      
+      <div class="header2" id="loginDiv">
+        <form id="loginForm" onsubmit="return setInfo()">
+          <label>Name:</label>
+          <input type="text" id="userName">
+          <label>Email:</label>
+          <input type="email" id="email">
+          <label>Password:</label>
+          <input type="password" id="password">
+          <input id="loginSubmit" type="submit">
+        </form>
+      </div>
 
     </body>
 

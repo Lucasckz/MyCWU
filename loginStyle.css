@@ -1,0 +1,31 @@
+#loginDiv {
+    margin-top: 27px;
+    margin-bottom: 0;
+    padding: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 25%;
+    align-self: center;
+    justify-self: center;
+    display: block;
+    background-color: white;
+}
+
+#loginForm {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+#loginForm label {
+    display: block;
+    align-self: center;
+    justify-self: center;
+}
+
+#loginForm input {
+    display: block;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
