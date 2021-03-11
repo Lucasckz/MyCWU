@@ -57,6 +57,10 @@ File: main.css
 	float: right;
 }
 
+.logOut:hover {
+	cursor:pointer;
+}
+
 .page{
 	background-color:  rgb(220,220,220, .5);
 	min-height: 700px;
@@ -133,6 +137,7 @@ File: main.css
 	margin-bottom: 10px;
 }
 .links:hover {
+	cursor: pointer;
 	background-image: none;
 }
 

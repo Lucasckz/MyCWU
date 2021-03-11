@@ -31,7 +31,7 @@ File: Registration.html
          <a href="../../../Index.html" class="header1"> My CWU </a>
        
  
-         <div class="header2">
+         <div class="header2" id="quarterSelectionHeader2">
              <div class="row">
                  <div class="tabs">
                      Outlook
@@ -88,21 +88,21 @@ File: Registration.html
                <a href="https://searchlib.cwu.edu/primo-explore/search?vid=CWU&mode=advanced"> Advanced Search </a>
              </div>
                  </div>
-             </div>
-             <div class="logOut">Log Out</div>
-         </div>
+            </div>
+                <div class="logOut" onclick="window.location.href='../../../login.html'">Log Out</div>
+            </div>
          
          <div class="page" id="quarterSelectionPage">
 
             <!-- Quarter Selection Form, uses select/option  -->
             <form id="selectQuarterForm">
                 <select name="quarters" id="quarterSelection" multiple>
-                  <option value="Spring 2021">Spring 2021</option>
-                  <option value="Summer 2021">Summer 2021</option>
-                  <option value="Fall 2021">Fall 2021</option>
+                  <option value="Spring 2021" ondblclick="changeWindow()">Spring 2021</option>
+                  <option value="Summer 2021" ondblclick="changeWindow()">Summer 2021</option>
+                  <option value="Fall 2021" ondblclick="changeWindow()">Fall 2021</option>
                 </select>
               </form>
-             <button id="quarterSelectionButton" onclick="changeWindow()">Submit</button>
+             <button id="quarterSelectionButton" onclick="changeWindow()" class="links">Submit</button>
          </div>
      </body>
  </html>
